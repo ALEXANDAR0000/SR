@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>SR-Anastasia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Source Code Pro', monospace; 
+            flex-direction: column;
+            text-align: center;
+            background:#2ae0c3;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        #hiddenText {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            img {
+                max-width: 100%;
+            }
+
+            button {
+                font-size: 14px;
+            }
+            h1{
+                font-size: 38px;
+            }
+
+            #hiddenText {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<img src="media/prase.webp" alt="Image">
+<h1>Anastasia srećan rodjendan!!!</h1>
+<button onclick="showText()">Click Me</button>
+<div id="hiddenText">Volim te <3</div>
+
+<script>
+    function showText() {
+        var text = document.getElementById('hiddenText');
+        if (text.style.display === 'none') {
+            text.style.display = 'block';
+        } else {
+            text.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
